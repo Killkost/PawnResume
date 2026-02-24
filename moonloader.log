@@ -1,0 +1,204 @@
+[12:33:58.594150] (system)	Session started.
+[12:33:58.595149] (debug)	Module handle: 65830000
+
+MoonLoader v.026.5-beta loaded.
+Developers: FYP, hnnssy, EvgeN 1137
+
+Copyright (c) 2016, BlastHack Team
+http://blast.hk/moonloader/
+
+[12:33:58.595149] (info)	Working directory: C:\games\Grand Theft Auto San Andreas\moonloader
+[12:33:58.595149] (debug)	FP Control: 0009001F
+[12:33:58.595149] (debug)	Game: GTA SA 1.0.0.0 US
+[12:33:58.595149] (system)	Installing pre-game hooks...
+[12:33:58.598148] (system)	Hooks installed.
+[12:34:00.774632] (debug)	Initializing opcode handler table
+[12:34:00.774632] (debug)	package.path = C:\games\Grand Theft Auto San Andreas\moonloader\lib\?.lua;C:\games\Grand Theft Auto San Andreas\moonloader\lib\?\init.lua;C:\games\Grand Theft Auto San Andreas\moonloader\?.lua;C:\games\Grand Theft Auto San Andreas\moonloader\?\init.lua;.\?.lua;C:\games\Grand Theft Auto San Andreas\moonloader\lib\?.luac;C:\games\Grand Theft Auto San Andreas\moonloader\lib\?\init.luac;C:\games\Grand Theft Auto San Andreas\moonloader\?.luac;C:\games\Grand Theft Auto San Andreas\moonloader\?\init.luac;.\?.luac
+[12:34:00.774632] (debug)	package.cpath = C:\games\Grand Theft Auto San Andreas\moonloader\lib\?.dll;
+[12:34:00.784629] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\autoaim.lua'...
+[12:34:00.785628] (debug)	New script: 0A3D2384
+[12:34:00.798625] (system)	autoaim.lua: Loaded successfully.
+[12:34:00.798625] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\AutoReboot.lua'...
+[12:34:00.798625] (debug)	New script: 0A3D1EEC
+[12:34:00.802625] (system)	ML-AutoReboot: Loaded successfully.
+[12:34:00.802625] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\cheat.lua'...
+[12:34:00.802625] (debug)	New script: 0A3D1D64
+[12:34:00.806629] (system)	cheat.lua: Loaded successfully.
+[12:34:00.806629] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\check-moonloader-updates.lua'...
+[12:34:00.806629] (debug)	New script: 0A3D12AC
+[12:34:00.811622] (system)	Check MoonLoader Updates: Loaded successfully.
+[12:34:00.811622] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\dronefov.lua'...
+[12:34:00.811622] (debug)	New script: 0A3D15BC
+[12:34:00.812620] (system)	dronefov.lua: Loaded successfully.
+[12:34:00.813621] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\dronemouse.lua'...
+[12:34:00.813621] (debug)	New script: 0A3D281C
+[12:34:00.816619] (system)	dronemouse.lua: Loaded successfully.
+[12:34:00.816619] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\fisheyeeffect.lua'...
+[12:34:00.816619] (debug)	New script: 0A3D29A4
+[12:34:00.853607] (system)	FishEyeEffect: Loaded successfully.
+[12:34:00.853607] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\flying.lua'...
+[12:34:00.853607] (debug)	New script: 0A3D2B2C
+[12:34:00.861609] (system)	flying.lua: Loaded successfully.
+[12:34:00.861609] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\getgun.lua'...
+[12:34:00.861609] (debug)	New script: 0A3D1434
+[12:34:00.865603] (system)	getgun.lua: Loaded successfully.
+[12:34:00.865603] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\justgivinggun.lua'...
+[12:34:00.865603] (debug)	New script: 0A3D1744
+[12:34:00.868602] (system)	justgivinggun.lua: Loaded successfully.
+[12:34:00.869603] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\newclothes.lua'...
+[12:34:00.869603] (debug)	New script: 0A3D1A54
+[12:34:00.872601] (system)	newclothes.lua: Loaded successfully.
+[12:34:00.872601] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\reload_all.lua'...
+[12:34:00.872601] (debug)	New script: 0D5082CC
+[12:34:00.876601] (system)	ML-ReloadAll: Loaded successfully.
+[12:34:00.876601] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\SF Integration.lua'...
+[12:34:00.877604] (debug)	New script: 0D507504
+[12:34:00.903591] (system)	SF Integration: Loaded successfully.
+[12:34:00.903591] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\spawnnewmodel.lua'...
+[12:34:00.903591] (debug)	New script: 0D50737C
+[12:34:00.910592] (system)	spawnnewmodel.lua: Loaded successfully.
+[12:34:00.910592] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\spawnnpc.lua'...
+[12:34:00.910592] (debug)	New script: 0D508144
+[12:34:00.915586] (system)	spawnnpc.lua: Loaded successfully.
+[12:34:00.915586] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\speedhack.lua'...
+[12:34:00.915586] (debug)	New script: 0D507E34
+[12:34:00.919587] (system)	speedhack.lua: Loaded successfully.
+[12:34:00.919587] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\suka.lua'...
+[12:34:00.919587] (debug)	New script: 0D50768C
+[12:34:00.923584] (system)	suka.lua: Loaded successfully.
+[12:34:00.930589] (system)	dronefov.lua: Script terminated. (0A3D15BC)
+[12:34:00.931582] (system)	flying.lua: Script terminated. (0A3D2B2C)
+[12:34:22.830620] (system)	Installing post-load hooks...
+[12:34:22.831620] (system)	Hooks installed.
+[12:34:22.832626] (system)	cheat.lua: Script terminated. (0A3D1D64)
+[12:34:22.833620] (system)	getgun.lua: Script terminated. (0A3D1434)
+[12:34:22.833620] (script)	justgivinggun.lua: Camera script active. Press 'P' for camera.
+[12:34:22.833620] (system)	spawnnpc.lua: Script terminated. (0D508144)
+[12:34:22.834620] (system)	speedhack.lua: Script terminated. (0D507E34)
+[12:34:26.612553] (error)	newclothes.lua: ...s\Grand Theft Auto San Andreas\moonloader\newclothes.lua:18: attempt to call global 'requestClothes' (a nil value)
+stack traceback:
+	...s\Grand Theft Auto San Andreas\moonloader\newclothes.lua: in function 'changeClothes'
+	...s\Grand Theft Auto San Andreas\moonloader\newclothes.lua:11: in function <...s\Grand Theft Auto San Andreas\moonloader\newclothes.lua:3>
+[12:34:26.612553] (error)	newclothes.lua: Script died due to an error. (0A3D1A54)
+[12:35:24.083809] (system)	autoaim.lua: Script terminated. (0A3D2384)
+[12:35:24.083809] (system)	dronemouse.lua: Script terminated. (0A3D281C)
+[12:35:24.084809] (system)	FishEyeEffect: Script terminated. (0A3D29A4)
+[12:35:24.086809] (system)	justgivinggun.lua: Script terminated. (0A3D1744)
+[12:35:24.086809] (system)	SF Integration: Script terminated. (0D507504)
+[12:35:24.087810] (system)	spawnnewmodel.lua: Script terminated. (0D50737C)
+[12:35:24.087810] (system)	suka.lua: Script terminated. (0D50768C)
+[12:35:24.088809] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\autoaim.lua'...
+[12:35:24.088809] (debug)	New script: 15967C8C
+[12:35:24.090809] (system)	autoaim.lua: Loaded successfully.
+[12:35:24.090809] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\dronemouse.lua'...
+[12:35:24.090809] (debug)	New script: 159677F4
+[12:35:24.093807] (system)	dronemouse.lua: Loaded successfully.
+[12:35:24.093807] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\fisheyeeffect.lua'...
+[12:35:24.093807] (debug)	New script: 15967E14
+[12:35:24.107802] (system)	FishEyeEffect: Loaded successfully.
+[12:35:24.107802] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\justgivinggun.lua'...
+[12:35:24.107802] (debug)	New script: 1596797C
+[12:35:24.109801] (system)	justgivinggun.lua: Loaded successfully.
+[12:35:24.109801] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\SF Integration.lua'...
+[12:35:24.109801] (debug)	New script: 15967F9C
+[12:35:24.112801] (system)	SF Integration: Loaded successfully.
+[12:35:24.112801] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\spawnnewmodel.lua'...
+[12:35:24.113800] (debug)	New script: 15967B04
+[12:35:24.115799] (system)	spawnnewmodel.lua: Loaded successfully.
+[12:35:24.115799] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\suka.lua'...
+[12:35:24.115799] (debug)	New script: 159671D4
+[12:35:24.117801] (system)	suka.lua: Loaded successfully.
+[12:35:24.266767] (script)	justgivinggun.lua: Camera script active. Press 'P' for camera.
+[12:40:13.230383] (system)	autoaim.lua: Script terminated. (15967C8C)
+[12:40:13.230383] (system)	dronemouse.lua: Script terminated. (159677F4)
+[12:40:13.230383] (system)	FishEyeEffect: Script terminated. (15967E14)
+[12:40:13.231369] (system)	justgivinggun.lua: Script terminated. (1596797C)
+[12:40:13.231369] (system)	SF Integration: Script terminated. (15967F9C)
+[12:40:13.233373] (system)	spawnnewmodel.lua: Script terminated. (15967B04)
+[12:40:13.234369] (system)	suka.lua: Script terminated. (159671D4)
+[12:40:13.234369] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\autoaim.lua'...
+[12:40:13.234369] (debug)	New script: 1852991C
+[12:40:13.236364] (system)	autoaim.lua: Loaded successfully.
+[12:40:13.236364] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\dronemouse.lua'...
+[12:40:13.236364] (debug)	New script: 18528B54
+[12:40:13.238367] (system)	dronemouse.lua: Loaded successfully.
+[12:40:13.238367] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\fisheyeeffect.lua'...
+[12:40:13.238367] (debug)	New script: 185292FC
+[12:40:13.250363] (system)	FishEyeEffect: Loaded successfully.
+[12:40:13.250363] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\justgivinggun.lua'...
+[12:40:13.250363] (debug)	New script: 159105E4
+[12:40:13.251363] (system)	justgivinggun.lua: Loaded successfully.
+[12:40:13.251363] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\SF Integration.lua'...
+[12:40:13.251363] (debug)	New script: 1591076C
+[12:40:13.255362] (system)	SF Integration: Loaded successfully.
+[12:40:13.255362] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\spawnnewmodel.lua'...
+[12:40:13.255362] (debug)	New script: 15910A7C
+[12:40:13.257359] (system)	spawnnewmodel.lua: Loaded successfully.
+[12:40:13.257359] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\suka.lua'...
+[12:40:13.257359] (debug)	New script: 1591109C
+[12:40:13.258360] (system)	suka.lua: Loaded successfully.
+[12:40:13.426419] (script)	justgivinggun.lua: Camera script active. Press 'P' for camera.
+[12:40:23.051900] (system)	autoaim.lua: Script terminated. (1852991C)
+[12:40:23.052900] (system)	dronemouse.lua: Script terminated. (18528B54)
+[12:40:23.052900] (system)	FishEyeEffect: Script terminated. (185292FC)
+[12:40:23.054906] (system)	justgivinggun.lua: Script terminated. (159105E4)
+[12:40:23.054906] (system)	SF Integration: Script terminated. (1591076C)
+[12:40:23.055920] (system)	spawnnewmodel.lua: Script terminated. (15910A7C)
+[12:40:23.055920] (system)	suka.lua: Script terminated. (1591109C)
+[12:40:23.055920] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\autoaim.lua'...
+[12:40:23.056924] (debug)	New script: 15910A7C
+[12:40:23.057923] (system)	autoaim.lua: Loaded successfully.
+[12:40:23.057923] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\dronemouse.lua'...
+[12:40:23.057923] (debug)	New script: 15910D8C
+[12:40:23.059913] (system)	dronemouse.lua: Loaded successfully.
+[12:40:23.059913] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\fisheyeeffect.lua'...
+[12:40:23.059913] (debug)	New script: 1591045C
+[12:40:23.070897] (system)	FishEyeEffect: Loaded successfully.
+[12:40:23.070897] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\justgivinggun.lua'...
+[12:40:23.070897] (debug)	New script: 1591109C
+[12:40:23.071910] (system)	justgivinggun.lua: Loaded successfully.
+[12:40:23.071910] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\SF Integration.lua'...
+[12:40:23.071910] (debug)	New script: 159105E4
+[12:40:23.073910] (system)	SF Integration: Loaded successfully.
+[12:40:23.073910] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\spawnnewmodel.lua'...
+[12:40:23.074909] (debug)	New script: 1591076C
+[12:40:23.075909] (system)	spawnnewmodel.lua: Loaded successfully.
+[12:40:23.075909] (system)	Loading script 'C:\games\Grand Theft Auto San Andreas\moonloader\suka.lua'...
+[12:40:23.075909] (debug)	New script: 15910C04
+[12:40:23.077895] (system)	suka.lua: Loaded successfully.
+[12:40:23.253222] (script)	justgivinggun.lua: Camera script active. Press 'P' for camera.
+[12:42:25.700088] (script)	spawnnewmodel.lua: Model 5500 is AVAILABLE in game files!
+[12:42:25.700088] (script)	spawnnewmodel.lua: Teleported to 0, 0, 5
+[12:46:17.789767] (script)	spawnnewmodel.lua: Model 5500 is AVAILABLE in game files!
+[12:46:17.790763] (script)	spawnnewmodel.lua: Teleported to 0, 0, 5
+[12:46:19.512979] (script)	spawnnewmodel.lua: Model 5500 is AVAILABLE in game files!
+[12:46:19.512979] (script)	spawnnewmodel.lua: Teleported to 0, 0, 5
+[12:53:35.545922] (script)	spawnnewmodel.lua: Requesting model...
+[12:53:35.624951] (script)	spawnnewmodel.lua: Object spawned SUCCESSFULLY!
+[12:53:54.137643] (script)	spawnnewmodel.lua: Requesting model...
+[12:53:54.137643] (script)	spawnnewmodel.lua: Object spawned SUCCESSFULLY!
+[12:53:57.868494] (script)	spawnnewmodel.lua: Requesting model...
+[12:53:57.868494] (script)	spawnnewmodel.lua: Object spawned SUCCESSFULLY!
+[12:53:58.785893] (script)	spawnnewmodel.lua: Requesting model...
+[12:53:58.785893] (script)	spawnnewmodel.lua: Object spawned SUCCESSFULLY!
+[12:53:59.555661] (script)	spawnnewmodel.lua: Requesting model...
+[12:53:59.556648] (script)	spawnnewmodel.lua: Object spawned SUCCESSFULLY!
+[12:54:03.427662] (script)	spawnnewmodel.lua: Model 5500 is AVAILABLE in game files!
+[12:54:03.428662] (script)	spawnnewmodel.lua: Teleported to 0, 0, 5
+[12:54:10.377608] (script)	spawnnewmodel.lua: Model 5500 is AVAILABLE in game files!
+[12:54:10.377608] (script)	spawnnewmodel.lua: Teleported to 0, 0, 5
+[12:54:37.807098] (script)	spawnnewmodel.lua: Requesting model...
+[12:54:37.807098] (script)	spawnnewmodel.lua: Object spawned SUCCESSFULLY!
+[12:56:36.420651] (script)	justgivinggun.lua: Done! Camera in inventory.
+[12:58:23.564849] (system)	Unloading...
+[12:58:23.564849] (system)	ML-AutoReboot: Script terminated. (0A3D1EEC)
+[12:58:23.565820] (system)	Check MoonLoader Updates: Script terminated. (0A3D12AC)
+[12:58:23.573816] (system)	ML-ReloadAll: Script terminated. (0D5082CC)
+[12:58:23.574815] (system)	autoaim.lua: Script terminated. (15910A7C)
+[12:58:23.574815] (system)	dronemouse.lua: Script terminated. (15910D8C)
+[12:58:23.575815] (system)	FishEyeEffect: Script terminated. (1591045C)
+[12:58:23.578815] (system)	justgivinggun.lua: Script terminated. (1591109C)
+[12:58:23.579816] (system)	SF Integration: Script terminated. (159105E4)
+[12:58:23.580814] (system)	spawnnewmodel.lua: Script terminated. (1591076C)
+[12:58:23.581816] (system)	suka.lua: Script terminated. (15910C04)
+[12:58:23.653790] (system)	Session terminated.
