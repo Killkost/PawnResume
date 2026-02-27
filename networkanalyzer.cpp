@@ -34,13 +34,13 @@ bool __stdcall onIncomingPacket(stRakNetHookParams* params) {
 	return true;
 }
 
-// ÔÓÍÊÖÈß ÊÎÌÀÍÄÛ ÄÎËÆÍÀ ÁÛÒÜ __stdcall (ðåøàåò îøèáêó E0167)
+// Ã”Ã“ÃÃŠÃ–ÃˆÃŸ ÃŠÃŽÃŒÃ€ÃÃ„Ã› Ã„ÃŽÃ‹Ã†ÃÃ€ ÃÃ›Ã’Ãœ __stdcall (Ã°Ã¥Ã¸Ã Ã¥Ã² Ã®Ã¸Ã¨Ã¡ÃªÃ³ E0167)
 void __stdcall cmdNetStat(std::string params) {
 	SF->getSAMP()->getChat()->AddChatMessage(D3DCOLOR_XRGB(255, 255, 0), "--- Network Stats ---");
 
 	for (auto const& item : netStats) {
 		char buf[128];
-		// item.first - ID, item.second - äàííûå
+		// item.first - ID, item.second - Ã¤Ã Ã­Ã­Ã»Ã¥
 		sprintf(buf, "ID: %d | Packets: %u | Total: %u bytes", item.first, item.second.count, item.second.bytes);
 		SF->getSAMP()->getChat()->AddChatMessage(D3DCOLOR_XRGB(255, 255, 255), buf);
 	}
@@ -50,10 +50,10 @@ void __stdcall mainloop() {
 	static bool initialized = false;
 	if (!initialized && SF->getSAMP()->IsInitialized()) {
 
-		// Ðåãèñòðàöèÿ êîëáýêà íà ïàêåòû
+		// ÃÃ¥Ã£Ã¨Ã±Ã²Ã°Ã Ã¶Ã¨Ã¿ ÃªÃ®Ã«Ã¡Ã½ÃªÃ  Ã­Ã  Ã¯Ã ÃªÃ¥Ã²Ã»
 		SF->getRakNet()->registerRakNetCallback(RAKHOOK_TYPE_INCOMING_PACKET, onIncomingPacket);
 
-		// Ïðàâèëüíàÿ ðåãèñòðàöèÿ êîìàíäû (óêàçûâàåì ôóíêöèþ íàïðÿìóþ)
+		// ÃÃ°Ã Ã¢Ã¨Ã«Ã¼Ã­Ã Ã¿ Ã°Ã¥Ã£Ã¨Ã±Ã²Ã°Ã Ã¶Ã¨Ã¿ ÃªÃ®Ã¬Ã Ã­Ã¤Ã» (Ã³ÃªÃ Ã§Ã»Ã¢Ã Ã¥Ã¬ Ã´Ã³Ã­ÃªÃ¶Ã¨Ã¾ Ã­Ã Ã¯Ã°Ã¿Ã¬Ã³Ã¾)
 		SF->getSAMP()->registerChatCommand("netstat", cmdNetStat);
 
 		SF->getSAMP()->getChat()->AddChatMessage(D3DCOLOR_XRGB(0, 255, 0), "Network Analyzer Started!");
@@ -66,4 +66,5 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD dwReason, LPVOID lpReserved) {
 		SF->initPlugin(mainloop, hModule);
 	}
 	return TRUE;
+
 }
