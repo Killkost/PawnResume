@@ -1,15 +1,15 @@
 local vkeys = require 'vkeys'
 local memory = require 'memory'
 
--- НАСТРОЙКИ
-local aim_smooth = 4.0    -- Базовая плавность
-local target_height = 0.5 -- Высота (голова)
+-- РќРђРЎРўР РћР™РљР
+local aim_smooth = 4.0    -- Р‘Р°Р·РѕРІР°СЏ РїР»Р°РІРЅРѕСЃС‚СЊ
+local target_height = 0.5 -- Р’С‹СЃРѕС‚Р° (РіРѕР»РѕРІР°)
 
 local locked_target = nil
 
 function main()
     while not isSampAvailable() do wait(100) end
-    sampAddChatMessage("{FFFF00}[ProAim]{FFFFFF} Синхронизация с FOV и экраном включена.", -1)
+    sampAddChatMessage("{FFFF00}[ProAim]{FFFFFF} РЎРёРЅС…СЂРѕРЅРёР·Р°С†РёСЏ СЃ FOV Рё СЌРєСЂР°РЅРѕРј РІРєР»СЋС‡РµРЅР°.", -1)
 
     while true do
         wait(0)
@@ -28,7 +28,7 @@ function main()
     end
 end
 
--- Читаем FOV из памяти (0xB6F0E0)
+-- Р§РёС‚Р°РµРј FOV РёР· РїР°РјСЏС‚Рё (0xB6F0E0)
 function getDynamicFov()
     local fov = memory.getfloat(0xB6F0E0, true)
     if fov == nil or fov < 1 then return 70.0 end
@@ -38,7 +38,7 @@ end
 function isTargetValid(ped)
     if not doesCharExist(ped) or isCharDead(ped) then return false end
     local x, y, z = getCharCoordinates(ped)
-    -- Проверяем, что convert3D вообще выдает координаты (враг на экране)
+    -- РџСЂРѕРІРµСЂСЏРµРј, С‡С‚Рѕ convert3D РІРѕРѕР±С‰Рµ РІС‹РґР°РµС‚ РєРѕРѕСЂРґРёРЅР°С‚С‹ (РІСЂР°Рі РЅР° СЌРєСЂР°РЅРµ)
     local x2, y2 = convert3DCoordsToScreen(x, y, z + target_height)
     return x2 ~= nil and y2 ~= nil
 end
@@ -73,38 +73,38 @@ function aimAtTarget(ped)
     local dx, dy = tx - cx, ty - cy
     local dist2d = math.sqrt(dx * dx + dy * dy)
 
-    -- 1. КОРРЕКЦИИ (базируются на твоих множителях)
+    -- 1. РљРћР Р Р•РљР¦РР (Р±Р°Р·РёСЂСѓСЋС‚СЃСЏ РЅР° С‚РІРѕРёС… РјРЅРѕР¶РёС‚РµР»СЏС…)
     local h_corr = 0.0
     local w_corr = 0.0
     if dist2d > 1 then
-        h_corr = (dist2d / 10.0) * 0.9 -- по вертикали (метры)
-        w_corr = (dist2d / 10.0) * 0.5   -- по горизонтали (метры)
+        h_corr = (dist2d / 10.0) * 0.9 -- РїРѕ РІРµСЂС‚РёРєР°Р»Рё (РјРµС‚СЂС‹)
+        w_corr = (dist2d / 10.0) * 0.5   -- РїРѕ РіРѕСЂРёР·РѕРЅС‚Р°Р»Рё (РјРµС‚СЂС‹)
     end
 
-    -- 2. МАГИЯ ВЕКТОРОВ: Находим направление "вбок"
-    -- Нормализуем вектор направления (делим на дистанцию)
+    -- 2. РњРђР“РРЇ Р’Р•РљРўРћР РћР’: РќР°С…РѕРґРёРј РЅР°РїСЂР°РІР»РµРЅРёРµ "РІР±РѕРє"
+    -- РќРѕСЂРјР°Р»РёР·СѓРµРј РІРµРєС‚РѕСЂ РЅР°РїСЂР°РІР»РµРЅРёСЏ (РґРµР»РёРј РЅР° РґРёСЃС‚Р°РЅС†РёСЋ)
     local nx = dx / dist2d
     local ny = dy / dist2d
    -- sampAddChatMessage(string.format("DEBUG: dist=%.2f, h_corr=%.2f, w_corr=%.2f", dist2d, h_corr, w_corr), -1)
     --sampAddChatMessage(string.format("DEBUG: normX=%.2f, normY=%.2f", nx, ny), -1)
-    -- Перпендикулярный вектор в 2D (поворот на 90 градусов):
-    -- Если nx, ny это "вперед", то -ny, nx это "влево"
+    -- РџРµСЂРїРµРЅРґРёРєСѓР»СЏСЂРЅС‹Р№ РІРµРєС‚РѕСЂ РІ 2D (РїРѕРІРѕСЂРѕС‚ РЅР° 90 РіСЂР°РґСѓСЃРѕРІ):
+    -- Р•СЃР»Рё nx, ny СЌС‚Рѕ "РІРїРµСЂРµРґ", С‚Рѕ -ny, nx СЌС‚Рѕ "РІР»РµРІРѕ"
     local sideX = -ny
     local sideY = nx
 
-    -- 3. ПРИМЕНЯЕМ СМЕЩЕНИЕ
-    -- Теперь final_tx/ty смещаются ОТНОСИТЕЛЬНО линии взгляда
+    -- 3. РџР РРњР•РќРЇР•Рњ РЎРњР•Р©Р•РќРР•
+    -- РўРµРїРµСЂСЊ final_tx/ty СЃРјРµС‰Р°СЋС‚СЃСЏ РћРўРќРћРЎРРўР•Р›Р¬РќРћ Р»РёРЅРёРё РІР·РіР»СЏРґР°
     local final_tx = tx + (sideX * w_corr)
     local final_ty = ty + (sideY * w_corr)
     local final_z  = tz - h_corr
 
-    -- 4. РАСЧЕТ УГЛОВ (стандартный)
+    -- 4. Р РђРЎР§Р•Рў РЈР“Р›РћР’ (СЃС‚Р°РЅРґР°СЂС‚РЅС‹Р№)
     local vx, vy, vz = final_tx - cx, final_ty - cy, final_z - cz
     
     local target_h = math.atan2(vy, vx) - (math.pi)
     local target_v = math.atan2(vz, dist2d)
 
-    -- 5. ПЛАВНОСТЬ И ПРИМЕНЕНИЕ
+    -- 5. РџР›РђР’РќРћРЎРўР¬ Р РџР РРњР•РќР•РќРР•
     local current_fov = getDynamicFov()
     local final_smooth = aim_smooth * (70.0 / current_fov)
 
