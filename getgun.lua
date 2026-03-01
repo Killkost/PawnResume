@@ -1,6 +1,6 @@
 local vkeys = require 'vkeys'
 
--- Таблица соответствия ID оружия к ID модели (DFF/TXD)
+
 local weaponModels = {
     [1] = 331, [2] = 333, [3] = 334, [4] = 335, [5] = 336, [6] = 337, [7] = 338, [8] = 339, [9] = 341,
     [10] = 321, [11] = 322, [12] = 323, [13] = 324, [14] = 325, [15] = 326, [16] = 342, [17] = 343, [18] = 344,
@@ -22,22 +22,23 @@ function main()
             
             local model = weaponModels[id]
             if model then
-                -- Поток для загрузки модели, чтобы не вешать игру
+
                 lua_thread.create(function()
                     requestModel(model)
                     loadAllModelsNow()
                     while not hasModelLoaded(model) do wait(0) end
                     
                     giveWeaponToChar(PLAYER_PED, id, ammo)
-                    sampAddChatMessage("{00FF00}[Gun-Cheat]{FFFFFF} Вы выдали себе оружие ID: " .. id, -1)
+                    sampAddChatMessage("{00FF00}[Gun-Cheat]{FFFFFF} Г‚Г» ГўГ»Г¤Г Г«ГЁ Г±ГҐГЎГҐ Г®Г°ГіГ¦ГЁГҐ ID: " .. id, -1)
                 end)
             else
-                sampAddChatMessage("{FF0000}[Ошибка]{FFFFFF} Неверный ID или модель оружия не найдена.", -1)
+                sampAddChatMessage("{FF0000}[ГЋГёГЁГЎГЄГ ]{FFFFFF} ГЌГҐГўГҐГ°Г­Г»Г© ID ГЁГ«ГЁ Г¬Г®Г¤ГҐГ«Гј Г®Г°ГіГ¦ГЁГї Г­ГҐ Г­Г Г©Г¤ГҐГ­Г .", -1)
             end
         else
-            sampAddChatMessage("{FFFF00}[Подсказка]{FFFFFF} Используйте: /getgun [ID] [Ammo]", -1)
+            sampAddChatMessage("{FFFF00}[ГЏГ®Г¤Г±ГЄГ Г§ГЄГ ]{FFFFFF} Г€Г±ГЇГ®Г«ГјГ§ГіГ©ГІГҐ: /getgun [ID] [Ammo]", -1)
         end
     end)
 
     wait(-1)
+
 end
